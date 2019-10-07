@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BDTransformacionInformacion" Class="DCCamaraComercioDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-59SP7SJ\SQLEXPRESS;Initial Catalog=BDTransformacionInformacion;Integrated Security=True" SettingsObjectName="CC_Parser.Properties.Settings" SettingsPropertyName="BDTransformacionInformacionConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbCamposContextuales_CamaraComercio" Member="tbCamposContextuales_CamaraComercio">
+    <Type Name="tbCamposContextuales_CamaraComercio">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FIELD" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL_WORDS_LEFT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOTAL_WORDS_RIGTH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbCamposContextuales_CamaraComercio_tbPalabrasClaves_CamaraComercio" Member="tbPalabrasClaves_CamaraComercio" ThisKey="CONSECUTIVO" OtherKey="FIELD_CONTEXTUAL" Type="tbPalabrasClaves_CamaraComercio" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbEncabezados_CamaraComercio" Member="tbEncabezados_CamaraComercio">
+    <Type Name="tbEncabezados_CamaraComercio">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="CIUDAD" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="TIPO_MARGEN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="orden" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbPalabrasClaves_CamaraComercio" Member="tbPalabrasClaves_CamaraComercio">
+    <Type Name="tbPalabrasClaves_CamaraComercio">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KEY_WORD" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FIELD_CONTEXTUAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tbCamposContextuales_CamaraComercio_tbPalabrasClaves_CamaraComercio" Member="tbCamposContextuales_CamaraComercio" ThisKey="FIELD_CONTEXTUAL" OtherKey="CONSECUTIVO" Type="tbCamposContextuales_CamaraComercio" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbParametros" Member="tbParametros">
+    <Type Name="tbParametros">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE_PARAMETRO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FECHA_CREACION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_ULTIMA_MODIFICACION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbSedes_CamaraComercio" Member="tbSedes_CamaraComercio">
+    <Type Name="tbSedes_CamaraComercio">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CAPTURE_CITY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spConsultarEncabezados_CamaraComercio" Method="spConsultarEncabezados_CamaraComercio">
+    <Parameter Name="Ciudad" Parameter="ciudad" Type="System.String" DbType="VarChar(200)" />
+    <ElementType Name="spConsultarEncabezados_CamaraComercioResult">
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spConsultarLista_CamaraComercio" Method="spConsultarLista_CamaraComercio">
+    <ElementType Name="spConsultarLista_CamaraComercioResult">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CAPTURE_CITY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spConsultarRegion_CamaraComercio" Method="spConsultarRegion_CamaraComercio">
+    <Parameter Name="Consecutivo" Parameter="consecutivo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spConsultarRegion_CamaraComercioResult">
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spConsultarCamposContextuales_CamaraComercio" Method="spConsultarCamposContextuales_CamaraComercio">
+    <ElementType Name="spConsultarCamposContextuales_CamaraComercioResult">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FIELD" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL_WORDS_LEFT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOTAL_WORDS_RIGTH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ORDER_BY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spConsultarPalabrasClaves_CamaraComercio" Method="spConsultarPalabrasClaves_CamaraComercio">
+    <Parameter Name="CampoContextual" Parameter="campoContextual" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spConsultarPalabrasClaves_CamaraComercioResult">
+      <Column Name="CONSECUTIVO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="KEY_WORD" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spConsultarEncabezadosGeneral_CamaraComercio" Method="spConsultarEncabezadosGeneral_CamaraComercio">
+    <ElementType Name="spConsultarEncabezadosGeneral_CamaraComercioResult">
+      <Column Name="CIUDAD" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

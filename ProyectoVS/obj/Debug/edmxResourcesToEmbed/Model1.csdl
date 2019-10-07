@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarteraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CarteraEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="SP_Consulta_Estado_Grupo_Operacion" ReturnType="Collection(String)">
+      <Parameter Name="Grupo" Mode="In" Type="String" />
+      <Parameter Name="Operacion" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

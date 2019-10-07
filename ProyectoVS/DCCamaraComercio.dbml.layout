@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DCCamaraComercio">
+  <DataContextMoniker Name="/DCCamaraComercioDataContext" />
+  <nestedChildShapes>
+    <classShape Id="54180ef7-08b7-4fd2-8f91-91de8030cc53" absoluteBounds="3.25, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DCCamaraComercioDataContext/tbCamposContextuales_CamaraComercio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8802f952-57c9-460a-b62e-dd67485a55a8" absoluteBounds="3.2649999999999997, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6b3ae3a-58c0-4734-a13f-c1d6427d2a43" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DCCamaraComercioDataContext/tbEncabezados_CamaraComercio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a44cd3e-b4a6-42ab-8de8-7dbbf132a63f" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76e675a6-8d30-45bc-a8a9-49657249e929" absoluteBounds="3.25, 2.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DCCamaraComercioDataContext/tbPalabrasClaves_CamaraComercio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a79306c6-f71b-44ac-a2b5-1f6739de4cbd" absoluteBounds="3.265, 3.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.25 : 2.07859537760417); (4.25 : 2.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DCCamaraComercioDataContext/tbCamposContextuales_CamaraComercio/tbCamposContextuales_CamaraComercio_tbPalabrasClaves_CamaraComercio" />
+      <nodes>
+        <classShapeMoniker Id="54180ef7-08b7-4fd2-8f91-91de8030cc53" />
+        <classShapeMoniker Id="76e675a6-8d30-45bc-a8a9-49657249e929" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ee29fa8d-1ca2-445a-9ba0-fd6173c0da0d" absoluteBounds="6, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DCCamaraComercioDataContext/tbParametros" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22d0dac5-776f-4f07-8659-f53e88bca0e8" absoluteBounds="6.0150000000000006, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="232363f9-ec16-4c15-8397-3f6101ffe235" absoluteBounds="0.5, 2.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DCCamaraComercioDataContext/tbSedes_CamaraComercio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a926e13f-1bd2-4b12-80d6-f720f103e325" absoluteBounds="0.51499999999999968, 3.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

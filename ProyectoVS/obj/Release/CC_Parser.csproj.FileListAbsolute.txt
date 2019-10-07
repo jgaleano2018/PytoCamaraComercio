@@ -1,0 +1,24 @@
+C:\Users\leona\Documents\LC\CamaraComercio\CC_Parser\CC_Parser\bin\Release\CC_Parser.dll
+C:\Users\leona\Documents\LC\CamaraComercio\CC_Parser\CC_Parser\bin\Release\CC_Parser.pdb
+C:\Users\leona\Documents\LC\CamaraComercio\CC_Parser\CC_Parser\bin\Release\Agility.Sdk.Model.dll
+C:\Users\leona\Documents\LC\CamaraComercio\CC_Parser\CC_Parser\bin\Release\TotalAgility.Sdk.dll
+C:\Users\leona\Documents\LC\CamaraComercio\CC_Parser\CC_Parser\obj\Release\CC_Parser.dll
+C:\Users\leona\Documents\LC\CamaraComercio\CC_Parser\CC_Parser\obj\Release\CC_Parser.pdb
+D:\Camara de Comercio\ProyectoVS\ProyectoVS\bin\Release\CC_Parser.dll
+D:\Camara de Comercio\ProyectoVS\ProyectoVS\bin\Release\CC_Parser.pdb
+D:\Camara de Comercio\ProyectoVS\ProyectoVS\obj\Release\CC_Parser.csproj.CoreCompileInputs.cache
+D:\Camara de Comercio\ProyectoVS\ProyectoVS\obj\Release\CC_Parser.csproj.CopyComplete
+D:\Camara de Comercio\ProyectoVS\ProyectoVS\obj\Release\CC_Parser.dll
+D:\Camara de Comercio\ProyectoVS\ProyectoVS\obj\Release\CC_Parser.pdb
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\CC_Parser.dll.config
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\CC_Parser.dll
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\CC_Parser.pdb
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\EntityFramework.dll
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\EntityFramework.xml
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\obj\Release\CC_Parser.csprojAssemblyReference.cache
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\obj\Release\CC_Parser.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\obj\Release\CC_Parser.csproj.CopyComplete
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\obj\Release\CC_Parser.dll
+C:\Users\user\source\repos\AppCamaraComercio\AppCamaraComercio\ProyectoVS\obj\Release\CC_Parser.pdb
